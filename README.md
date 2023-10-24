@@ -24,6 +24,12 @@ Aprendi sobre alguns comandos do php artisan:
 - php artisan down (colocar aplicação em modo de manutenção)
 - php artisan up (sair do modo de manutenção)
 
+### Aula 07
+
+Aprendi sobre introdução a rotas no laravel
+- Criação de um template 'blade.php' na pasta views
+- Rotas no 'routes'
+
 ## Comentários sobre a aula
 
 Nada ainda.

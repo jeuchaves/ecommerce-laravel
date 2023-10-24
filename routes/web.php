@@ -16,3 +16,8 @@ use Illuminate\Support\Facades\Route;
 Route::get('/', function () {
     return view('welcome');
 });
+
+// Aula 08 - Introdução a rotas
+Route::get('/empresa', function() {
+    return view('site/empresa');
+});
