@@ -10,7 +10,19 @@ De começo, estou aprendendo através de um curso gratuito no Youtube da **Node 
 - Composer
 - Laravel
 
+Rode a aplicação com o comando:
 > php artisan serve
+
+## Aulas
+
+### Aula 06
+
+Aprendi sobre alguns comandos do php artisan:
+- php artisan serve (rodar a aplicação)
+- php artisan list (listar os comandos)
+- php artisan help [comando] (apresentar a utilização do comando)
+- php artisan down (colocar aplicação em modo de manutenção)
+- php artisan up (sair do modo de manutenção)
 
 ## Comentários sobre a aula
 
