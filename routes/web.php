@@ -21,3 +21,12 @@ Route::get('/', function () {
 Route::get('/empresa', function() {
     return view('site/empresa');
 });
+
+// Aula 09 - Rotas Any e Match
+Route::any('/any', function() {
+    return "Permite todos os tipos de acesso http (put, delete, get, post)";
+});
+
+Route::match(['get', 'post'], '/match', function() {
+    return "Permite apenas acessos definidos";
+});
