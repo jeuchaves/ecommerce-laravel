@@ -30,3 +30,29 @@ Route::any('/any', function() {
 Route::match(['get', 'post'], '/match', function() {
     return "Permite apenas acessos definidos";
 });
+
+// Aula 10 - Passagem de parâmetros
+
+// /produto/123
+Route::get('/produto/{id}', function($id) {
+    return "O ID do produto é: " . $id;
+});
+
+// Aula 11 - Redirecionamento
+Route::get('/sobre', function() {
+    return redirect('/empresa');
+});
+
+// Aula 13 - Grupos de rotas
+
+Route::prefix('admin')->group(function() {
+    Route::get('dashboard', function() {
+        return 'dashboard';
+    });
+    Route::get('users', function() {
+        return 'users';
+    });
+    Route::get('clients', function() {
+        return 'clients';
+    });
+});
