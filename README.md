@@ -34,6 +34,14 @@ Aprendi sobre introdução a rotas no laravel
 
 Aprendi sobre as rotas any e match
 
+### Aula 14
+
+Aprendi sobre a criação de controller, para isso use:
+
+> php artisan make:controller [Nome do controlador]
+Por definição, use o nome do controlador no singular somado ao sufixo 'Controller'.
+ex: ProdutoController
+
 ## Comentários sobre a aula
 
 Nada ainda.
