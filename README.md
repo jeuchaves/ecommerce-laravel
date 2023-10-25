@@ -47,6 +47,12 @@ ex: ProdutoController
 > php artisan make:controller [Nome do controlador] --resource (cria um controlador já definido)
 > php artisan route:list (lista todas as rotas da aplicação)
 
+### Aula 19
+
+> php artisan migrate (cria todas as migrações)
+> php artisan migrate:rollback (volta a um estado anterior as migrações)
+> php artisan migrate:status (confere o estado das migrações)
+
 ## Comentários sobre a aula
 
 Nada ainda.
