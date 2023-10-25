@@ -97,6 +97,11 @@ Rodar a semente
 
 > php artisan make:factory CategoriaFactory
 
+### Aula 28
+
+Criar um migration, factory, seed, controller resource e o model
+> php artisan make:model Test -mfscr
+
 ## Comentários sobre a aula
 
 Nada ainda.
