@@ -42,6 +42,11 @@ Aprendi sobre a criação de controller, para isso use:
 Por definição, use o nome do controlador no singular somado ao sufixo 'Controller'.
 ex: ProdutoController
 
+### Aula 16
+
+> php artisan make:controller [Nome do controlador] --resource (cria um controlador já definido)
+> php artisan route:list (lista todas as rotas da aplicação)
+
 ## Comentários sobre a aula
 
 Nada ainda.
