@@ -109,7 +109,7 @@ Carrinho de compras
 
 ## Comentários sobre a aula
 
-Nada ainda.
+Estou na aula 60!
 
 ## Avaliação de conhecimento
 
