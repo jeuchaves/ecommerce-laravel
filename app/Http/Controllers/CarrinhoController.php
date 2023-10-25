@@ -31,6 +31,11 @@ class CarrinhoController extends Controller
     }
 
     public function atualizaCarrinho(Request $request) {
+
+        if($request->quantity <= 0) {
+            return redirect()->route('site.carrinho')->with('erro', 'Quantidade inválida');
+        }
+
         \Cart::update($request->id, [
             'quantity' => [
                 'relative' => false,

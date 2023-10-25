@@ -21,6 +21,15 @@
             </div>
         @endif
 
+        @if ($mensagem = Session::get('erro'))
+            <div class="card red">
+                <div class="card-content white-text">
+                    <span class="card-title">Ops!</span>
+                    <p>{{$mensagem}}</p>
+                </div>
+            </div>
+        @endif
+
         <h5>Seu carrinho possui {{$itens->count()}} produtos</h5>
         
         <table class="striped">
