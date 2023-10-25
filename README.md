@@ -102,6 +102,11 @@ Rodar a semente
 Criar um migration, factory, seed, controller resource e o model
 > php artisan make:model Test -mfscr
 
+### Aula 50
+
+Carrinho de compras
+> composer require darryldecode/cart
+
 ## Comentários sobre a aula
 
 Nada ainda.
