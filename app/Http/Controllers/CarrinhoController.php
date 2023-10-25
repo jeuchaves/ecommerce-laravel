@@ -16,7 +16,7 @@ class CarrinhoController extends Controller
             'id' => $request->id,
             'name' => $request->name,
             'price' => $request->price,
-            'quantity' => $request->quantity,
+            'quantity' => abs($request->quantity),
             'attributes' => [
                 'image' => $request->image,
             ],
@@ -32,14 +32,10 @@ class CarrinhoController extends Controller
 
     public function atualizaCarrinho(Request $request) {
 
-        if($request->quantity <= 0) {
-            return redirect()->route('site.carrinho')->with('erro', 'Quantidade inválida');
-        }
-
         \Cart::update($request->id, [
             'quantity' => [
                 'relative' => false,
-                'value' => $request->quantity,
+                'value' => abs($request->quantity),
             ],
         ]);
         return redirect()->route('site.carrinho')->with('sucesso', 'Produto atualizado no carrinho com sucesso');
