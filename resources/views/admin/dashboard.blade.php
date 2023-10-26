@@ -52,7 +52,7 @@
                   <article class="bg-gradient-blue card z-depth-4 ">
                       <i class="material-icons">face</i>
                       <p>Usuários</p>
-                      <h3>34 </h3>           
+                      <h3>{{$usuarios}}</h3>           
                   </article>
               </div>
   
