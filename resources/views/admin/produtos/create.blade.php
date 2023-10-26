@@ -2,8 +2,9 @@
 <div id="create" class="modal">
     <div class="modal-content">
         <h4><i class="material-icons">playlist_add_circle</i> Novo produto</h4>
-        <form action="route('admin.produto.store')" method="post" enctype="multipart/form-data" class="col s12">
+        <form action="{{route('admin.produto.store')}}" method="post" enctype="multipart/form-data" class="col s12">
             @csrf
+            <input type="hidden" name="id_user" value="{{auth()->user()->id}}">
             <div class="row">
                 <div class="input-field col s6">
                     <input id="nome" type="text" name="nome" class="validate">
@@ -18,7 +19,7 @@
                     <label for="descricao">Descrição</label>
                 </div>
                 <div class="input-field col s12">
-                    <select name="categoria">
+                    <select name="id_categoria">
                         <option value="" disabled selected>Escolha uma opção</option>
                         @foreach ($categorias as $categoria)
                             <option value="{{$categoria->id}}">{{$categoria->nome}}</option>

@@ -117,9 +117,13 @@ Foi feito um filtro para permitir o login somente se o servidor fosse @gmail.com
 Autorização com Policies
 > php artisan make:policy ProdutoPolicy
 
+### Aula 80
+Caminho simbólico para a storage
+> php artisan storage:link
+
 ## Comentários sobre a aula
 
-Estou na aula 72 (15:18)!
+Finalizado
 
 ## Avaliação de conhecimento
 
