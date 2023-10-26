@@ -1,5 +1,5 @@
 @extends('site.layout')
-@section('title', 'Home')
+@section('title', 'Login')
 @section('conteudo')
     <div class="row container">
         @if ($mensagem = Session::get('erro'))

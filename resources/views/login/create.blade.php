@@ -1,5 +1,5 @@
 @extends('site.layout')
-@section('title', 'Home')
+@section('title', 'Cadastrar')
 @section('conteudo')
     <div class="row container">
         @if ($errors->any())
