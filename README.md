@@ -107,6 +107,12 @@ Criar um migration, factory, seed, controller resource e o model
 Carrinho de compras
 > composer require darryldecode/cart
 
+### Aula 64
+
+Criando os middleware
+> php artisan make:middleware CheckEmail
+Foi feito um filtro para permitir o login somente se o servidor fosse @gmail.com
+
 ## Comentários sobre a aula
 
 Estou na aula 60!
