@@ -113,6 +113,10 @@ Criando os middleware
 > php artisan make:middleware CheckEmail
 Foi feito um filtro para permitir o login somente se o servidor fosse @gmail.com
 
+### Aula 68
+Autorização com Policies
+> php artisan make:policy ProdutoPolicy
+
 ## Comentários sobre a aula
 
 Estou na aula 60!
