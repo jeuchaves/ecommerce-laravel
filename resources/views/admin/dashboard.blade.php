@@ -127,10 +127,10 @@
     var myChart = new Chart(ctx, {
         type: 'pie',
         data: {
-            labels: ['Facebook', 'Google', 'Instagram'],
+            labels: [{!!$catLabel!!}],
             datasets: [{
                 label: 'Visitas',
-                data: [12, 19, 3],
+                data: [{{$catTotal}}],
                 backgroundColor: [
                     'rgba(255, 99, 132)',
                     'rgba(54, 162, 235)',                         

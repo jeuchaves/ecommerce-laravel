@@ -62,7 +62,7 @@
                             </button>
 
                             {{-- Botão de Cadastro --}}
-                            <p class="center-align">Não tem uma conta? <a href="#">Cadastre-se</a></p>
+                            <p class="center-align">Não tem uma conta? <a href="{{route('login.create')}}">Cadastre-se</a></p>
                         </form>
                     </div>
                 </div>

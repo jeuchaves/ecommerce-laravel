@@ -2,6 +2,8 @@
 
 namespace App\Http\Controllers;
 
+use App\Models\Categoria;
+use App\Models\Produto;
 use App\Models\User;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\DB;
@@ -29,6 +31,19 @@ class DashboardController extends Controller
         $userAno = implode(',', $ano);
         $userTotal = implode(',', $total);
 
-        return view('admin.dashboard', compact('usuarios', 'userLabel', 'userAno', 'userTotal'));
+        // gráfico 2 - categorias
+        $catData = Categoria::all();
+
+        // preparar array
+        foreach($catData as $cat) { 
+            $catNome[] = "'".$cat->nome."'";
+            $catTotal[] = Produto::where('id_categoria', $cat->id)->count();
+        }
+
+        // formatar para o chart.js
+        $catLabel = implode(',', $catNome);
+        $catTotal = implode(',', $catTotal);
+
+        return view('admin.dashboard', compact('usuarios', 'userLabel', 'userAno', 'userTotal', 'catLabel', 'catTotal'));
     }
 }
