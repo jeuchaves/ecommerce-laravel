@@ -28,6 +28,7 @@
         </nav>     
 
         <div class="card z-depth-4 registros" >
+            @include('admin.includes.mensagens')
             <table class="striped ">
                 <thead>
                     <tr>
