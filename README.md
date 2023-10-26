@@ -119,7 +119,7 @@ Autorização com Policies
 
 ## Comentários sobre a aula
 
-Estou na aula 60!
+Estou na aula 72 (15:18)!
 
 ## Avaliação de conhecimento
 
