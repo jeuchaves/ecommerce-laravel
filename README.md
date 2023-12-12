@@ -1,130 +1,15 @@
-## Sobre o repositório
+## Sobre o projeto
+Este é um projeto de um ecommerce utilizando a framework Laravel para o meu aprendizado.
 
-Estou aprendendo Laravel para fins educacionais e profissionais, visto minha paixão por PHP e a recorrente demanda de profissionais da área somado ao uso de Laravel. Para isso, criei esse primeiro repositório e com o postegar dele estarei criando meu portfólio.
+## Detalhes da aplicação
+A Aplicação foi feita com PHP 8.1, Composer e Laravel, portanto é necessário que tenha esses componentes instalados em sua máquina ou no servidor.<br>
+O projeto conta com uma página home carregada pelo Controller apresentando em seu header as categorias da loja criadas automaticamente usando a fábrica e um conjunto pequeno de produtos em destaque. Cada categoria conta com o mesmo header recarregado pelo template em soma de uma grade de produtos que coincidem com a categoria. No entanto, os produtos podem alterar dependente do usuário logado haja vista que só são visíveis os produtos registrados pelo próprio usuário, isso foi proveniente do uso das Políticas do Laravel como uma regra de negócio para fins de testes.<br>
+O projeto também conta com uma página do produto como modelo para a apresentação de cada um dos produtos e um carrinho com botões de edição e remoção assim como qualquer e-commerce tem.<br>
+Por fim, o projeto conta com o dashboard robusto utilizando o Chart.js para apresentar relatório de vendas, quantidade de usuários. Tudo isso é possível através de um sistema de autenticação disponível pelo Laravel que permite o login seguro a plataforma.<br>
 
-De começo, estou aprendendo através de um curso gratuito no Youtube da **Node Studio Treinamentos.**
-
-## Requisitos da aplicação
-
-- PHP 8.1
-- Composer
-- Laravel
-
-Rode a aplicação com o comando:
-> php artisan serve
-
-## Aulas
-
-### Aula 06
-
-Aprendi sobre alguns comandos do php artisan:
-- php artisan serve (rodar a aplicação)
-- php artisan list (listar os comandos)
-- php artisan help [comando] (apresentar a utilização do comando)
-- php artisan down (colocar aplicação em modo de manutenção)
-- php artisan up (sair do modo de manutenção)
-
-### Aula 08
-
-Aprendi sobre introdução a rotas no laravel
-- Criação de um template 'blade.php' na pasta views
-- Rotas no 'routes'
-
-### Aula 09
-
-Aprendi sobre as rotas any e match
-
-### Aula 14
-
-Aprendi sobre a criação de controller, para isso use:
-
-> php artisan make:controller [Nome do controlador]
-Por definição, use o nome do controlador no singular somado ao sufixo 'Controller'.
-ex: ProdutoController
-
-### Aula 16
-
-> php artisan make:controller [Nome do controlador] --resource (cria um controlador já definido)
-> php artisan route:list (lista todas as rotas da aplicação)
-
-### Aula 19
-
-> php artisan migrate (cria todas as migrações)
-> php artisan migrate:rollback (volta a um estado anterior as migrações)
-> php artisan migrate:status (confere o estado das migrações)
-
-### Aula 20
-
-> php artisan make:migration [nome da migração]
-Usando o prefixo 'create_' e o sufixo '_table' as funções virão pronto para uma tabela
-
-### Aula 21
-
-> Schema::rename('nome_antigo', 'nome_novo') em uma migration altera o nome da tabela
-
-### Aula 22
-
-> php artisan migrate:reset (reseta todas as tabelas)
-> php artisan migrate:refresh (reseta e reinstala todas as tabelas)
-
-### Aula 23
-
-> composer require doctrine/dbal (poder alterar as colunas do banco de dados)
--- Para essa versão parece que não foi necessário usar esse composer
-
-### Aula 24
-> php artisan make:model Produto
-
-### Aula 25
-
-Cria o modelo junto com a migração
-> php artisan make:model Categoria --migration
-
-Cria o modelo, migração, controller do tipo resource
-> php artisan make:model Categoria --migration --controller --resource
-> php artisan make:model Categoria -m -cr
-> php artisan make:model Categoria -mcr
-
-### Aula 26
-
-Criar uma semente
-> php artisan make:seeder UsersSeeder
-
-Rodar a semente
-> php artisan db:seed
-
-### Aula 27
-
-> php artisan make:factory CategoriaFactory
-
-### Aula 28
-
-Criar um migration, factory, seed, controller resource e o model
-> php artisan make:model Test -mfscr
-
-### Aula 50
-
-Carrinho de compras
-> composer require darryldecode/cart
-
-### Aula 64
-
-Criando os middleware
-> php artisan make:middleware CheckEmail
-Foi feito um filtro para permitir o login somente se o servidor fosse @gmail.com
-
-### Aula 68
-Autorização com Policies
-> php artisan make:policy ProdutoPolicy
-
-### Aula 80
-Caminho simbólico para a storage
-> php artisan storage:link
-
-## Comentários sobre a aula
-
-Finalizado
-
-## Avaliação de conhecimento
-
-Nada ainda.
+## O que eu aprendi?
+Aprendi os comandos essencias da framework como o caso do **php artisan** para gerir alguns processos de criação automática de modelos, resources, factories tabelas no banco de dados.
+- A arquitetura do software é baseado em MVC e por felicidade essa estrutura é muito conhecida na grade curricular da minha faculdade e portanto foi bem tranquilo entender o funcionamento.
+- O template engine Blade é excelente para o desenvolvimento de views modernas e responsivas haja vista sua enorme flexibilidade de utilizar seus comandos diretamente na página de visualização.
+- Acerca do sistemas de rotas da framework percebi que é muito intuitiva sua utilização haja vista que com um pouco de conhecimento de rotas préviamente ditas se tornam uma mão na roda o uso delas adjunto do conceito de tageamento e nomeação.
+- Me aprofundei um pouco nas políticas do Laravel mas entendi seu funcionamento como regra de modelo de negócio abstratamente.
